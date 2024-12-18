@@ -1,0 +1,257 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    line-height: 1.6;
+    color: #333;
+    background-color: #FFFFFF;
+  }
+  
+  .navbar {
+    padding: 1rem;
+  }
+  
+  /* Welcome Section */
+  .welcome-section {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: #FFFFFF;
+    color: #343434;
+  }
+  
+  .welcome-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .welcome-section h1 span {
+    color: #1E90FF;
+  }
+  
+  /* Celebrating Section */
+  .celebrating-section {
+    text-align: center;
+    padding: 3rem 2rem;
+    background-color: #ffe359;
+    color: #000;
+  }
+  
+  .celebrating-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+  }
+  
+  .celebrating-section p {
+    font-size: 1rem;
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  /* New Members Section */
+  .members-section {
+    text-align: center;
+    padding: 3rem 2rem;
+    background-color: #1E90FF;
+    color: #fff;
+  }
+  
+  .members-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  .members-container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    overflow-x: auto;
+    padding-bottom: 1rem;
+    gap: 1.5rem;
+  }
+  
+  .members-container::-webkit-scrollbar {
+    height: 8px;
+  }
+  
+  .members-container::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+  }
+  
+  .members-container::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+  
+  .member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 150px;
+    max-width: 200px;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .member:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.4);
+  }
+  
+  .member img {
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    max-width: 150px;
+    margin-bottom: 1rem;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .member p {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+
+  @media (max-width: 768px) {
+    .members-container {
+      scroll-snap-type: x mandatory;
+      gap: 1rem;
+    }
+  
+    .member {
+      scroll-snap-align: start;
+    }
+  
+    .members-container {
+      overflow-x: scroll;
+      -webkit-overflow-scrolling: touch;
+    }
+  }
+  
+  
+  
+
+  .brochure-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: #f9f9f9;
+  }
+  
+  .brochure-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .brochure-image {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #1E90FF;
+  }
+  
+  .text-content {
+    text-align: center;
+    padding: 1.5rem;
+  }
+  
+  .carnival-title {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .register-btn {
+    background-color: #C11B4E;
+    color: #ffffff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+  }
+  
+  .register-btn:hover {
+    background-color: #e60000;
+    transform: translateY(-3px);
+    color: #14f3ff;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+
+  @media (min-width: 768px) {
+    .brochure-card {
+      flex-direction: row;
+      align-items: center; 
+      gap: 1.5rem;
+      max-width: 800px;
+    }
+  
+    .brochure-image {
+      flex: 1;
+      max-width: 50%;
+      height: auto;
+      border-bottom: none;
+    }
+  
+    .text-content {
+      flex: 1; 
+      text-align: left;
+      display: flex; 
+      flex-direction: column;
+      justify-content: center;
+      padding: 1rem;
+    }
+  
+    .carnival-title {
+      font-size: 2rem; 
+      margin-bottom: 1rem;
+    }
+  
+    .register-btn {
+      font-size: 1.2rem; 
+    }
+  }
+  
+  
+  
+  footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .social-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+  }
+  
