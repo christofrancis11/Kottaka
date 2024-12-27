@@ -39,11 +39,18 @@ body, h1, h2, p {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
   }
-  
-  .event-card h2 {
+
+  .event-card h2{
     font-size: 1.5rem;
     color: #1E90FF;
+    font-weight: bold !important;
+  }
+
+  .event-sub{
+    font-size: 0.8rem !important;
+    color: #000;
     margin-bottom: 1rem;
+    margin-top: 0.2rem;
   }
   
   .event-card p {
