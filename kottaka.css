@@ -33,25 +33,6 @@
     color: #ffffff;
   }
   
-  /* Celebrating Section */
-  .celebrating-section {
-    text-align: center;
-    padding: 3rem 2rem;
-    background-color: #fbfcc7;
-    color: #000000;
-  }
-  
-  .celebrating-section h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    font-weight: bold;
-  }
-  
-  .celebrating-section p {
-    font-size: 1rem;
-    max-width: 600px;
-    margin: auto;
-  }
   
   /* New Members Section */
   .members-section {
@@ -142,7 +123,6 @@
   }
   
   
-  
 
   .brochure-section {
     display: flex;
@@ -153,6 +133,15 @@
     color: #000;
   }
   
+  .squid-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: #ffb9d4;
+    color: #000;
+  }
+
   .brochure-card {
     display: flex;
     flex-direction: column;
@@ -184,6 +173,7 @@
     font-weight: bold;
     text-transform: uppercase;
   }
+  
   
   .register-btn {
     background-color: #C11B4E;
