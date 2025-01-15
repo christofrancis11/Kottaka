@@ -132,6 +132,10 @@
     background-color: #fbfcc7;
     color: #000;
   }
+
+  .bottom-button{
+    margin-top: 2rem;
+  }
   
   .squid-section {
     display: flex;
